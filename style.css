@@ -1,0 +1,304 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1f1f1f; 
+    color: #ffffff; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.cabeçalho {
+    color: #ffffff; 
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #111; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabeçalho img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+.botaohome a {
+    position: fixed;
+    text-decoration: none;
+    color: whitesmoke;
+   top: auto;
+    left: 500px;
+}
+
+.botaohome a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    
+}
+
+.botaohome a:hover::after {
+    width: 100%;
+}
+
+.botaosobre a {
+    position: fixed;
+    text-decoration: none;
+    color: whitesmoke;
+    top: auto;
+    left: 600px;
+}
+
+.botaosobre a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    
+}
+
+.botaosobre a:hover::after {
+    width: 100%;
+}
+
+.botaoprojeto a {
+    position: fixed;
+    text-decoration: none;
+    color: whitesmoke;
+    top: auto;
+    left: 740px;
+}
+
+.botaoprojeto a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    
+}
+
+.botaoprojeto a:hover::after {
+    width: 100%;
+}
+
+.botaohab a {
+    position: fixed;
+    text-decoration: none;
+    color: whitesmoke;
+    top: auto;
+    left: 850px;
+}
+
+.botaohab a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    
+}
+
+.botaohab a:hover::after {
+    width: 100%;
+} 
+
+
+.sociais {
+    position: fixed;
+    top: 70px;
+    right: 110px; 
+    display: flex;
+}
+
+.sociais a {
+    margin-left: 4px;
+}
+
+.sociais img {
+    width: 40px;
+    height: auto;
+}
+
+.minhafoto {
+    position: fixed;
+    background-size: cover;
+    background-image: url(minhafoto.jpeg);
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    border: 2px solid #574f4f;
+    top: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+}
+
+.paginas {
+    padding: 120px 20px 50px; 
+    min-height: calc(100vh - 120px); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilidades, .API {
+    color: #ffffff; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    max-width: 800px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.sobremim {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .sobremim h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .sobremim p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+
+.repositorios {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #00b894;
+    font-weight: bold;
+}
+
+.boasvindas {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    overflow: hidden; 
+    border-right: 2px solid white; 
+    white-space: nowrap; 
+    animation: typing 3s steps(40, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+.carrossel {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardcarrosel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carrossel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+}
+
+.carrossel #botaoanterior {
+    left: 0;
+}
+
+.carrossel #botaoproximo {
+    right: 0;
+}
