@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css.css" />
-    </head>
-  
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
     <div class="cabeçalho">
-        <h1> DevFolio</h1>
-    </div>
+        <h1>DevFolio</h1>
 
-    <div class="sociais">
-        <a href="https://github.com/wcoutinhoo"><img src="github.png"></a>
-        <a href="https://www.linkedin.com/in/william-coutinho-0b2a69205/"> <img src="linkedin.png"></a>
+        <div class="sociais">
+            <a href="https://github.com/wcoutinhoo"><img src="github.png" alt="GitHub"></a>
+
+            <a href="https://www.linkedin.com/in/william-coutinho-0b2a69205/"><img src="linkedin.png" alt="LinkedIn"></a> <p></p>
         </div>
 
+        <div class="botaosobre">
+            <a href="#sobre">Sobre mim</a>
+        </div>
+    
+        <div class="botaohome">
+            <a href="#home">Home</a>
+        </div>
+    
+        <div class="botaoprojeto">
+            <a href="#projetos">Projetos</a>
+        </div>
+    
+        <div class="botaohab">
+            <a href="#habilidades">Habilidades</a>
+        </div>
+    </div>
 
-    <div class="botoes">
+   
 
-        <a href="index.html">Home</a> <br> <br>
-        <a href="sobre.html">Sobre Mim</a> <br> <br>
-        <a href="projetos.html">Projetos</a> <br> <br>
-        <a href="habilidades.html">Habilidades</a> <br> <br>
+    
+
+    <div id="home" class="paginas">
+        <div class="minhafoto"></div>
+        <h2 class="boasvindas">Bem vindo ao portfólio de William Coutinho!</h2>
+    </div>
+
+    <div id="sobre" class="paginas">
+        <div class="sobremim">
+            <h3>Sobre Mim</h3>
+            <p>Olá, Meu nome é William Coutinho Antunes, tenho 21 anos. Sou estudante de Engenharia de Software, atualmente estou no 3° Semestre. Moro em Curitiba-Paraná. Sempre fui muito ligado na área de tecnologia e também sempre fui decidido que queria cursar Engenharia de Software. Meu atual interesse é trabalhar com Banco de Dados.</p>
+        </div>
+    </div>
+
+    <div id="projetos" class="paginas">
+        <div class="API">
+            <h3>Repositórios no meu GitHub</h3>
+            <div id="listarepositorios" class="repositorios">
+            
+            </div>
+        </div>
+    </div>
+
+    <div id="habilidades" class="paginas">
+       
+<div class="carrossel">
+    <div class="cardcarrosel">
+        <div class="slide">
+            <img src="css3.png" alt="Imagem 1">
+        </div>
+        <div class="slide">
+            <img src="html5.png" alt="Imagem 2">
+        </div>
+        <div class="slide">
+            <img src="js.png" alt="Imagem 3">
+        </div>
+    </div>
+    <button id="botaoanterior">&#10094;</button>
+    <button id="botaoproximo">&#10095;</button>
+</div>
     </div>
     
-    <div class="minhafoto"> </div>
-    
-    
     <script src="script.js"></script>
-
-
+</body>
 </html>
